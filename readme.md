@@ -23,8 +23,8 @@ Een krachtige tool voor het automatiseren van webtaken met behulp van Large Lang
 
 1. Clone de repository:
 ```bash
-git clone https://github.com/yourusername/agent-executive.git
-cd agent-executive
+git clone https://github.com/MMunManAIDev/Agent-Execution.git
+cd Agent-Execution
 ```
 
 2. Installeer dependencies:
