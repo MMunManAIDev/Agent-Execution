@@ -99,22 +99,15 @@ class UrlBar(ttk.Frame):
             self.logger.error(f"Failed to load page: {str(e)}")
         finally:
             # Ensure button is reset only if it still exists
-            if self.go_btn.winfo_exists() and self.go_btn.winfo_ismapped():
-                self.reset_go_button()
-            else:
-                self.logger.warning("Go button does not exist, skipping reset.")
-
-        except Exception as e:
-            self.logger.error(f"Failed to load page: {str(e)}")
-        finally:
-            # Ensure button is reset only if it still exists
             try:
                 if self.go_btn.winfo_exists() and self.go_btn.winfo_ismapped():
                     self.reset_go_button()
                 else:
                     self.logger.warning("Go button does not exist, skipping reset.")
             except tk.TclError:
-                self.logger.warning("Failed to reset Go button; widget might have been destroyed.")
+                self.logger.warning(
+                    "Failed to reset Go button; widget might have been destroyed."
+                )
 
 
     def reset_go_button(self):
