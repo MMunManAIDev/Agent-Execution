@@ -1,0 +1,15 @@
+2024-11-11 16:37:06 - root - [0;32mINFO[0m - Logging initialized
+2024-11-11 16:37:06 - root - [0;32mINFO[0m - Starting AgentExecutive application
+2024-11-11 16:37:06 - root - [0;32mINFO[0m - Python version: 3.13.0 (tags/v3.13.0:60403a5, Oct  7 2024, 09:38:07) [MSC v.1941 64 bit (AMD64)]
+2024-11-11 16:37:06 - root - [0;32mINFO[0m - Operating system: win32
+2024-11-11 16:37:08 - src.handlers.web_handler - [0;32mINFO[0m - Playwright browser session started successfully
+2024-11-11 16:37:08 - src.ui.app - [0;32mINFO[0m - Handlers initialized successfully
+2024-11-11 16:37:09 - src.ui.app - [0;32mINFO[0m - Application initialized successfully
+2024-11-11 16:37:09 - root - [0;32mINFO[0m - Application initialized successfully
+2024-11-11 16:37:13 - src.handlers.web_handler - [0;32mINFO[0m - Loading page: https://google.com
+2024-11-11 16:37:13 - src.handlers.web_handler - [0;31mERROR[0m - Failed to load page: Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x0000024069990B80 (otid=0x0000024066FBA220) current active started main>
+	Expected: <greenlet.greenlet object at 0x0000024066FB7A40 (otid=0x00000240668C1DD0) suspended active started main>
+2024-11-11 16:37:13 - src.handlers.web_handler - [0;31mERROR[0m - Screenshot failed: Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x0000024069990B80 (otid=0x0000024066FBA220) current active started main>
+	Expected: <greenlet.greenlet object at 0x0000024066FB7A40 (otid=0x00000240668C1DD0) suspended active started main>

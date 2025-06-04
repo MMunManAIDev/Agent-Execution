@@ -1,0 +1,20 @@
+My goal for v0.1 of this application:
+If you set the goal to, for example, resolve an Incident in your favorite SaaS ITSM platform, a system of agents should be able to do this (including refinement). App operation should only be limited to checking the output of each step before proceeding (this will be a manual step). This should be technically feasible.And reasoning errors are actually welcomed! As the user is still in full control of each step, it can guide the agents to the appropriate path. Heavy logging for every tiny detail will function as input to advance the app to the next version.
+
+This version needs to make sure the scaffolding can handle step by step page navigation and the clicking of buttons as well as enabling a system of agents to utilize some specific tools in a controlled environment. But this version will also lean heavily on user interaction in the app to steer the agents every step of the way.
+
+Version 0.2 should be optimized so much that you can skip the manual steps of checking the output of menial tasks (like basic page navigation for example). The scaffolding should handle that (through action types) autonomously in coordination with the system of agents. Tasks like asking someone a question, sending an email, as well as actually implement something that will continue the process/workflow towards the goal will still need user review. This version should also have an implementation of automated error correction of each step so it can revise it's plan for the next action if necessary before actually taking that action. Revised steps should also always be manually reviewed by the user step by step. Again: Heavy logging for every tiny detail will function as input to advance the app to the next version.
+
+This version needs to make sure that the scaffolding is able to manage more automation and error correction. Heavy user interaction is still being leaned on in this version but for the more impactful actions (that can actually mess up a system or person 😛).
+
+Version 0.3 should be able to have a system of agents return some (let's say 3) non-menial actions in advance it'll think it needs to take in order to accomplish the goal (fully detailed as to what each action will do). Complemented with the error correction mechanism of course. This way, the user should be able to approve a batch of steps instead of just one at the time or let the system of agents make an update to at least one of the steps if the user deems it in error. And here as well: Heavy logging for every tiny detail will function as input to advance the app to the next version.
+
+This version is to make sure the scaffolding is intelligent enough to make sure it doesn't need to lean on user interaction in the app so much as the previous version even with the more impactful actions.
+
+Version 0.n --> Additional versions for optimizations that will be necessary for whatever we'll come across during development.
+
+Full version goals:
+- Version 1 should be able to make agents work one default workflow or process in an end-to-end fashion in full without user interaction. I expect that this should be technically feasible already.
+- Version 2 should be able to make agents work customized workflows or processes in an end-to-end fashion in full without user interaction. I expect that this should be technically feasible already.
+- Version 3 should be able to make agents work multiple workflows or processes generally, in simultaneous fashion from end-to-end in full without user interaction. This might be technically feasible already, but I'm unsure.
+- Version 4 should be able to make agents work in full organisation without user interaction. This means it works like version 3, but headless. I don't expect this to be possible yet with current technology.
